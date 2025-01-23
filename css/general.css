@@ -1,0 +1,19 @@
+:root{
+    --primary-color: rgba(182, 138, 55, 0.425);
+    --light-gray-color: rgb(233, 233, 233);
+    --gray-color: rgb(195, 195, 195);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}

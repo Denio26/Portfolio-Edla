@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/sobremim.css">
+</head>
+<body onload="GetDate()">
+    <div class="cabecalho">
+        <h1 class="logo">
+            Edla Costa
+        </h1>
+        <nav class="links">
+            <ul>
+                <li><p onclick="ScrollTo('main')" class="active-link">Inicio</p></li>
+                <li><p onclick="ScrollTo('sobremim')">Sobremim</p></li>
+                <li><p onclick="ScrollTo('projetos')">Projetos</p></li>
+                <li><p onclick="ScrollTo('contactos')">Contactos</p></li>
+            </ul>
+            <button class="menu-icon" onclick="OpenMenu()"><img src="/images/icons/menu (1).png"/></button>
+        </nav>
+    </div>
+
+    <div class="menu-container" id="menu">
+        <nav class="menu-lateral">
+            <div class="menu-cabecalho">
+                <button class="menu-icon" onclick="CloseMenu()"><img src="/images/icons/close (1).png"/></button>
+            </div>
+            <ul>
+                <li><p onclick="ScrollTo('main')" class="active-link">Inicio</p></li>
+                <li><p onclick="ScrollTo('sobremim')">Sobremim</p></li>
+                <li><p onclick="ScrollTo('projetos')">Projetos</p></li>
+                <li><p onclick="ScrollTo('contactos')">Contactos</p></li>
+            </ul>
+        </nav>
+    </div>
+           
+    <section class="main-container" id="main">
+         <div class="introduction">
+            <h1>Hi i´m Edla</h1>
+            <div>
+                <p>A fotografia é minha forma de eternizar momentos e expressar emoções. </p> 
+                <p>Cada clique revela meu olhar único sobre o mundo ao meu redor.</p>
+                <p>Por trás de cada imagem, busco histórias que conectem pessoas e memórias. </p>              
+            </div>
+        </div>
+        <div class="image-container">
+        </div>
+    </section>
+
+    <section class="sobremim" id="sobremim">
+        <h1 class="titulo">Sobre Mim</h1>
+        <div class="subtitulo-container">
+            <div class="subtitulo-barra"></div>
+        </div>
+
+        <div class="container">
+            <div class="sobremim-fotos">
+                <div class="row">
+                    <div class="image">
+                        <img src="images/eu/IMG_8525.JPG"/>
+                    </div>
+                    <div class="image">
+                        <img src="images/eu/IMG_8436.JPG"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image">
+                        <img src="images/eu/IMG_8476.JPG"/>
+                    </div>
+                    <div class="image">
+                        <img src="images/eu/IMG_8528.JPG"/>
+                    </div>
+                </div>
+            </div>
+            <div class="informacao">
+                <p>A fotografia é minha forma de eternizar momentos e expressar emoções. </p> 
+                <p>Cada clique revela meu olhar único sobre o mundo ao meu redor.</p>
+                <p>Por trás de cada imagem, busco histórias que conectem pessoas e memórias. </p>              
+
+                <table class="sobremim-tabela">
+                    <tr>
+                        <td><strong>Idade</strong></td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Residência</strong></td>
+                        <td>Portugal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-mail</strong></td>
+                        <td>edla.costa09@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Telemóvel</strong></td>
+                        <td>+351 931 938 673</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h1 class="titulo">Projetos</h1>
+        <div class="subtitulo-container">
+            <p class="subtitulo">Fotos</p>
+            <div class="subtitulo-barra"></div>
+        </div>
+        <div class="projetos-container">
+            <div class="projeto">
+                <video controls>
+                    <source src="video/Sabores.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projeto">
+                <div class="row">
+                    <video controls>
+                        <source src="video/Promotional.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="row">
+                    <img src="images/Gatos.jpg"/>
+                </div>
+            </div>            
+            <div class="projeto">
+                <div class="row">
+                    <img src="images/Gato.jpg"/>
+                </div>
+                <div class="row">
+                    <img src="images/Porto.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactos" id="contactos">
+        <h1 class="titulo">Contato</h1>
+        <div class="subtitulo-container">
+            <div class="subtitulo-barra"></div>
+        </div>
+        <form>
+            <div class="row">
+                <input type="text" name="name" placeholder="Escreva o Seu Nome" >
+                <input type="email" name="email" placeholder="Digite o Seu email">
+            </div>
+
+            <div class="row">
+                <select name="assunto" >
+                    <option value="1">Sugestão</option>
+                    <option value="2">Contratação</option>
+                </select>
+                <input type="date" name="date" id="data" disabled>
+            </div>
+            <textarea placeholder="Escreva aqui"></textarea>
+            <button>Submeter</button>
+          </form>
+        
+
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>

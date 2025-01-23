@@ -1,0 +1,155 @@
+.cabecalho{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    display: flex;
+    padding: 20px 70px;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho .logo{
+    width: 60%;
+    color: var(--primary-color);
+}
+
+.cabecalho .links{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.active-link{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li p{
+    text-decoration: none;
+    color: black;
+    outline: none;
+    font-weight: 600;
+}
+
+ul li p:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    z-index: 50;
+}
+
+.menu-icon img{
+    width: 100%;
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+.menu-lateral{
+    width: 50%;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-container .menu-lateral ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.menu-container .menu-lateral ul li{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-container .menu-lateral ul li p{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-container .menu-lateral ul li .active-link{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.menu-container .menu-lateral ul li p:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.menu-lateral .menu-cabecalho{
+
+    display: flex;
+    justify-content: end;
+    padding: 0 20px;
+}
+
+.menu-lateral .menu-icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.open{
+    display: block;
+}
+
+@media only screen and (max-width: 800px)  {
+
+    .cabecalho{
+        padding: 20px;
+    }
+
+    .cabecalho .links ul{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+}
