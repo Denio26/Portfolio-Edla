@@ -146,8 +146,8 @@ body{
 }
 
 .projetos .projetos-container .projeto{
-    max-width: 400px;
-    max-height: 680px;
+    max-width: 100%;
+    max-height: 700px;
     overflow: hidden;
     border-radius: 10px;
     transition: 0.3s ease;
@@ -156,9 +156,19 @@ body{
     gap: 10px;
 }
 
+.projetos .projetos-container .projeto .row1{
+    min-height: 50%;
+}
+
+.projetos .projetos-container .projeto .row1 img{
+    height: 100%;
+    object-fit: cover;
+}
+
 .projetos .projetos-container .projeto img,
 .projetos .projetos-container .projeto video{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
